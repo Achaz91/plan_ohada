@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explorateur de Comptes OHADA</title>
+  <!-- Lien vers le manifeste PWA -->
+  <link rel="manifest" href="manifest.json">
+  <!-- Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Explorateur de Comptes OHADA</h1>
+  </header>
+  
+  <!-- Zone d'information en haut pour sélectionner la classe -->
+  <div id="classSelectionBar">
+    <label for="classSelect">Classe :</label>
+    <select id="classSelect">
+      <option value="all">Toutes les classes</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+    <span id="classLabel">Toutes les classes</span>
+  </div>
+  
+  <!-- Zone contenant la barre de recherche et l'arborescence -->
+  <div id="treeContainer">
+    <input type="text" id="searchInput" placeholder="Rechercher un compte (numéro ou mots-clés)">
+    <div id="treeResults">
+      <p id="treePrompt">Chargement du plan de comptes...</p>
+    </div>
+  </div>
+  
+  <!-- Lien vers le fichier JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>
