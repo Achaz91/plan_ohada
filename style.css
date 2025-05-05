@@ -1,0 +1,94 @@
+/* Styles globaux */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #4a4a4a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Zone d'information pour le sélecteur de classe */
+#classSelectionBar {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#classSelectionBar label {
+    font-size: 1rem;
+}
+
+/* Style pour le sélecteur de classe */
+#classSelect {
+    font-size: 1rem;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Libellé de la classe */
+#classLabel {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Zone de l’arborescence des comptes */
+#treeContainer {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
+}
+
+/* Barre de recherche positionnée en sticky */
+#searchInput {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+}
+
+/* Style pour chaque nœud de l’arborescence */
+.node {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.node:hover {
+    background-color: #eaeaea;
+}
+
+/* Mise en évidence spécifique pour la classe 9 */
+.class9 {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+/* Style pour les enfants */
+.children {
+    margin-left: 20px;
+    border-left: 1px dotted #ccc;
+    padding-left: 10px;
+}
