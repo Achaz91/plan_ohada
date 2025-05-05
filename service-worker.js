@@ -1,6 +1,8 @@
 const CACHE_NAME = 'comptes-cache-v1';
 const urlsToCache = [
   'index.html',
+  'style.css',
+  'main.js',
   'manifest.json',
   'plan_co.csv',
   'icon-192.png',
